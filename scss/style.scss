@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+$color-primary: #00b7ff;
+$color-text: #333;
+$color-white: #fff;
+
+body {
+	background-color: $color-primary;
+	color: $color-white;
+	font-family: "Open Sans", sans-serif;
+	padding-top: 2rem;
+}
+
+#form {
+	background-color: $color-white;
+	border-radius: 5px;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	color: $color-text;
+	box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.08);
+	.form-control {
+		background-color: darken($color-white, 2%);
+		border-radius: 0;
+		border: 0px;
+		&:focus {
+			box-shadow: none;
+		}
+	}
+	.btn {
+		border: 0;
+		box-shadow: none;
+		&.btn-primary {
+			background-color: $color-primary;
+			&:hover {
+				background-color: darken($color-primary, 10%);
+				transform: scale(0.98);
+			}
+		}
+		&.btn-danger {
+			&:hover {
+				transform: scale(0.98);
+			}
+		}
+	}
+	.todos {
+		background-color: $color-white;
+		padding: 0;
+		margin: 0;
+		list-style-type: none;
+		li {
+			text-align: left;
+			border-top: 1px solid #e5e5e5;
+			padding: 1rem;
+			padding-right: 0.5rem;
+			&.completed {
+				color: #b6b6b6;
+				text-decoration: line-through;
+			}
+			.btn {
+				float: right;
+				position: relative;
+				top: -10px;
+				width: 50px;
+				margin-left: 0.5rem;
+			}
+		}
+	}
+}

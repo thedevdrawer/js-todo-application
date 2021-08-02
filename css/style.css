@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+body {
+  background-color: #00b7ff;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  padding-top: 2rem;
+}
+
+#form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  color: #333;
+  box-shadow: 0 1px 5px 5px rgba(0, 0, 0, 0.08);
+}
+
+#form .form-control {
+  background-color: #fafafa;
+  border-radius: 0;
+  border: 0px;
+}
+
+#form .form-control:focus {
+  box-shadow: none;
+}
+
+#form .btn {
+  border: 0;
+  box-shadow: none;
+}
+
+#form .btn.btn-primary {
+  background-color: #00b7ff;
+}
+
+#form .btn.btn-primary:hover {
+  background-color: #0092cc;
+  transform: scale(0.98);
+}
+
+#form .btn.btn-danger:hover {
+  transform: scale(0.98);
+}
+
+#form .todos {
+  background-color: #fff;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+#form .todos li {
+  text-align: left;
+  border-top: 1px solid #e5e5e5;
+  padding: 1rem;
+  padding-right: 0.5rem;
+}
+
+#form .todos li.completed {
+  color: #b6b6b6;
+  text-decoration: line-through;
+}
+
+#form .todos li .btn {
+  float: right;
+  position: relative;
+  top: -10px;
+  width: 50px;
+  margin-left: 0.5rem;
+}
